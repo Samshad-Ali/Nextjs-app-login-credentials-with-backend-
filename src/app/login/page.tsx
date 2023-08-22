@@ -13,8 +13,8 @@ export default function page() {
           <label htmlFor="password">Password</label>
           <input type="password" name="password" id="password" />
         </div>
-        <button>Login</button>
-        <p>Didn't have account ? <Link href={'signup'}>Signup</Link> </p>
+        <button className="btn">Login</button>
+        <p>Didn't have account ? <Link href={'/signup'}>Signup</Link> </p>
       </form>
     </div>
   );
