@@ -1,25 +1,24 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
-const userSchema =  mongoose.Schema({
+const userSchema = mongoose.Schema({
     username:{
         type:String,
-        required:[true,"Please provide a username"],
-        unique:true
+        required:[true,"Name is required"]
     },
     email:{
         type:String,
-        required:[true,"Please provide an Email"],
+        required:[true,"Name is required"],
         unique:true
     },
     password:{
         type:String,
-        // required:[true,"Please provide a password"],
+        required:[true,"Name is required"]
     },
-    isVerified:{
+    isAdmin:{
         type:Boolean,
         default:false
     },
-    isAdmin:{
+    isVerified:{
         type:Boolean,
         default:false
     },
@@ -29,6 +28,6 @@ const userSchema =  mongoose.Schema({
     verifyTokenExpiry:Date
 },{timestamps:true})
 
-const User = mongoose.model("userData",userSchema)
+const User = mongoose.models.userDatas || mongoose.model('userDatas',userSchema);
+
 export default User;
- 

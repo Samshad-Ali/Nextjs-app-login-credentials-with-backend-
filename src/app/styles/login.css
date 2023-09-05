@@ -10,7 +10,7 @@
     gap: 2rem;
   }
  
-  .login form{
+  .login .form{
     min-width: 320px;
     border: 1px solid white;
     padding: 1rem;
@@ -18,7 +18,7 @@
     align-items: center;
   }
   
- .login form div{
+ .login .form div{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,11 +27,11 @@
   width: 100%;
 }
 
- .login form div label{
+ .login .form div label{
   align-self: flex-start;
 }
 
-.login form div input{
+.login .form div input{
    width: 100%;
   outline: none;
   background-color:transparent;
